@@ -7,15 +7,15 @@ import keyboardM
 def getInput():
     left_right, front_back, up_down, clock_counter = 0, 0, 0, 0
 
-    if keyboardM.getKey("a"): left_right = -50
-    if keyboardM.getKey("d"): left_right = 50
-    if keyboardM.getKey("w"): front_back = 50
-    if keyboardM.getKey("s"): front_back = -50
+    if keyboardM.getKey("a"): left_right = -150
+    if keyboardM.getKey("d"): left_right = 150
+    if keyboardM.getKey("w"): front_back = 150
+    if keyboardM.getKey("s"): front_back = -150
 
-    if keyboardM.getKey("i"): up_down = 50
-    if keyboardM.getKey("k"): up_down = -50
-    if keyboardM.getKey("j"): clock_counter = -50
-    if keyboardM.getKey("l"): clock_counter = 50
+    if keyboardM.getKey("i"): up_down = 150
+    if keyboardM.getKey("k"): up_down = -150
+    if keyboardM.getKey("j"): clock_counter = -150
+    if keyboardM.getKey("l"): clock_counter = 150
 
     if keyboardM.getKey("UP"): drone.takeoff()
     if keyboardM.getKey("DOWN"): drone.land()
